@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
 //        Patterns.EMAIL_ADDRESS.matcher();
 //        Patterns.EMAIL_ADDRESS.matcher();
 
+//        android studio install google service
+
         RetrofitInit.initApi().getConnect().enqueue(new Callback<String>() {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {

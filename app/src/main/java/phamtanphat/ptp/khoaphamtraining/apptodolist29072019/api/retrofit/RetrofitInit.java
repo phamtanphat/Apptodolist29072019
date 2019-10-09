@@ -49,7 +49,9 @@ public class RetrofitInit {
         retrofit = new Retrofit.Builder()
                         .client(okHttpClient)
                         .addConverterFactory(GsonConverterFactory.create(gson))
-                        .baseUrl("")
+                        .baseUrl("http://172.16.1.17:8080/apitodolist2907/")
+                        .build();
+
 
         return retrofit;
     }

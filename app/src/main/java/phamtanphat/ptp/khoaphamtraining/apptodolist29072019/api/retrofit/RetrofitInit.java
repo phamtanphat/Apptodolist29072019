@@ -1,5 +1,13 @@
 package phamtanphat.ptp.khoaphamtraining.apptodolist29072019.api.retrofit;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import java.util.Arrays;
+import java.util.concurrent.TimeUnit;
+
+import okhttp3.OkHttpClient;
+import okhttp3.Protocol;
 import retrofit2.Retrofit;
 
 public class RetrofitInit {
@@ -24,6 +32,19 @@ public class RetrofitInit {
 
     private static Retrofit getInstance() {
 
+        // escaping character : `i\'am`
+        Gson gson = new GsonBuilder()
+                .setLenient()
+                .disableHtmlEscaping()
+                .create();
+
+        OkHttpClient okHttpClient = new OkHttpClient.Builder()
+                                .readTimeout(10, TimeUnit.SECONDS)
+                                .writeTimeout(10 , TimeUnit.SECONDS)
+                                .connectTimeout(10,TimeUnit.SECONDS)
+                                .retryOnConnectionFailure(true)
+                                .protocols(Arrays.asList(Protocol.HTTP_1_1))
+                                .build();
 
 
         return retrofit;

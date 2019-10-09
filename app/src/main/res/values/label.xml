@@ -3,4 +3,8 @@
 
     <string name="label_title_dang_ky">Đăng ký thông tin</string>
     <string name="label_hint_email_username">Email/Username</string>
+    <string name="label_password">Password</string>
+    <string name="label_re_password">Re-password</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_dang_ky">Đăng ký</string>
 </resources>

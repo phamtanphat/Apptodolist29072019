@@ -5,6 +5,6 @@
     <string name="label_hint_email_username">Email/Username</string>
     <string name="label_password">Password</string>
     <string name="label_re_password">Re-password</string>
-    <string name="label_cancel">Cancel</string>
+    <string name="label_login">Login</string>
     <string name="label_dang_ky">Register</string>
 </resources>

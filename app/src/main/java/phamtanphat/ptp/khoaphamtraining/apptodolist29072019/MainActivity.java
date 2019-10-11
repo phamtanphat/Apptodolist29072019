@@ -30,16 +30,5 @@ public class MainActivity extends AppCompatActivity {
 
 //        android studio install google service
 
-        RetrofitInit.initApi().getConnect().enqueue(new Callback<String>() {
-            @Override
-            public void onResponse(Call<String> call, Response<String> response) {
-
-            }
-
-            @Override
-            public void onFailure(Call<String> call, Throwable t) {
-
-            }
-        });
     }
 }

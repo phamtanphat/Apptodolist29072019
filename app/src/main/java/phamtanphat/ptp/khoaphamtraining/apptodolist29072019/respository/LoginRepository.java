@@ -19,7 +19,7 @@ public class LoginRepository {
         apiRequest = RetrofitInit.initApi();
     }
 //
-    public static LoginRepository getInstance(){
+    public synchronized static LoginRepository getInstance(){
         if (repository == null){
             repository = new LoginRepository();
         }
@@ -42,7 +42,4 @@ public class LoginRepository {
         });
         return loginResponse;
     }
-
-
-
 }

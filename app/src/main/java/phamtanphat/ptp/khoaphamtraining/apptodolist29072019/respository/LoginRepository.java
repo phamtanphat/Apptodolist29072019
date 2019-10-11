@@ -1,6 +1,7 @@
 package phamtanphat.ptp.khoaphamtraining.apptodolist29072019.respository;
 
 import android.database.Observable;
+import android.util.Log;
 
 import androidx.lifecycle.MutableLiveData;
 
@@ -33,6 +34,7 @@ public class LoginRepository {
             @Override
             public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
                 loginResponse.postValue(response.body());
+
             }
 
             @Override

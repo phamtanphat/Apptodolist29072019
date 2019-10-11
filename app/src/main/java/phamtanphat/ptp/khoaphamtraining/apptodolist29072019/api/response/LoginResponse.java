@@ -8,9 +8,9 @@ public class LoginResponse {
     @SerializedName("success")
     @Expose
     private Boolean success;
-    @SerializedName("message")
+    @SerializedName("iduser")
     @Expose
-    private String message;
+    private String iduser;
 
     public Boolean getSuccess() {
         return success;
@@ -20,12 +20,12 @@ public class LoginResponse {
         this.success = success;
     }
 
-    public String getMessage() {
-        return message;
+    public String getIduser() {
+        return iduser;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setIduser(String iduser) {
+        this.iduser = iduser;
     }
 
 }
